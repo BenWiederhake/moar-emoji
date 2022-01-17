@@ -6,7 +6,7 @@ Based on [an earlier Python-based project](https://github.com/BenWiederhake/n-e-
 
 [The Website](https://benwiederhake.github.io/moar-emoji/)
 
-<!-- ![A screenshot in which the user has successfully emojified some text](screenshot.png) -->
+![A screenshot in which the user has successfully emojified some text](screenshot.png)
 
 Of course, don't use this in official documents. If you do it anyway, please send me a screenshot.
 
