@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="moar-emoji: Emojify everything! Insert ALL the emojis! Make everyone's eyes bleed!">
+  <meta name="keywords" content="emoji, silly, noshow, specific">
+  <title>Moar Emoji!</title>
+  <link rel="canonical" href="https://BenWiederhake.github.io/moar-emoji/">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <a class="sr-only sr-only-focusable" href="#content">Using this with a screen reader is going to be shit. Skip to main content</a>
+  <main class="container my-4 pb-5" id="content">
+    <h1><img src="/favicon.png" alt="Silly looking emoji"> Moar emoji!</h1>
+    <p>You needz moar emoji? This page <em>very</em> gives you emoji!</p>
+    <br>
+    <form id="input-form" action="#">
+      <input type="text" class="form-control" id="textinput" value="Hello, Hippy Dippy Lovey Dovey Huggy Wuggy Fuzzy Wuzzy World!">
+    <br>
+      <input type="submit" class="btn btn-primary" value="↓ Moar emoji! ↓">
+    </form>
+    <br>
+    <!-- TODO: Make it easier to copy -->
+    <textarea id="textoutput" class="form-control" rows="4" readonly></textarea>
+    <br>
+    <h2>ALL the options!</h2>
+    <input type="checkbox" id="checkbox-between-letters">
+    <label for="checkbox-between-letters">Also between letters, not just between words</label><br>
+    <div id="all-checkboxes">
+      <!-- More will be filled-in here by js. -->
+    </div>
+    <input type="checkbox" id="checkbox-sel-custom">
+    <label for="checkbox-sel-custom">Custom emojis, insert multiple times to increase probability:</label><br>
+    <input type="text" class="form-control" id="textinput-sel-custom" value="😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😜😂😅😍😏😘😡😢😨😩😭😱😳😵😷😇😈😎😬🤐🤑🤓🤔🤗🤣🤤🤩🤪🤬🤭🤯🧐🥰🥳🥴🥺🥱🥲">
+    <br>
+    <button id="btn-deactivate" class="btn btn-primary">Deactivate all</button>
+    <button id="btn-activate" class="btn btn-primary">Activate all</button>
+    <button id="btn-reset-default" class="btn btn-primary">Reset to default selection</button>
+  </main>
+  <nav class="fixed-bottom bg-light d-flex p-2 flex-row flex-wrap justify-content-between align-items-center">
+    <div class="mx-2">
+      <span class="navbar-brand" href="#">moar-emoji</span>
+    </div>
+    <div class="mx-2">
+      <a href="https://github.com/BenWiederhake/moar-emoji/">Repo</a> | <a href="https://help.github.com/articles/github-privacy-statement/">Data&nbsp;Protection</a> | <a href="https://github.com/BenWiederhake/moar-emoji/blob/master/LICENSE#L1">License&nbsp;(CC0)</a>
+    </div>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
